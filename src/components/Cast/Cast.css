@@ -1,0 +1,28 @@
+.Cast_box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.Cast_title{
+    width: 100%;
+    padding-bottom: 20px;
+        text-align: center;
+            color: azure;
+            font-size: 30px;
+            margin: 0px;
+}
+
+.Cast_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 200px;
+    gap: 10px;
+    height: 320px;
+color: azure;
+}
+
+.text{
+    color: azure;
+}

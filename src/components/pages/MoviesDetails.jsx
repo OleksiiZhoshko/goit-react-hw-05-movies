@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react"
 import { fetchMovieDetsById } from "../servise/appServise";
 import { useParams, NavLink, Outlet, useNavigate, useLocation } from "react-router-dom";
-import { BASE_IMG_URL } from "components/servise/constants";
+import DataMoviesDetails from "components/DataMoviesDetails/DataMoviesDetails";
+import './MoviesDetails.css';
 
 const MoviesDetails = () => {
     const [movieData, setMovieData] = useState(null);
@@ -28,15 +29,16 @@ const MoviesDetails = () => {
     }
 
     return (
-        <div>
-            <h1>MoviesDetails</h1>
-            <button type="button" onClick={hendleGoBack}>go back</button>
-            <img src={BASE_IMG_URL(movieData.poster_path)} alt="" />
-            <NavLink to='cast' state={{from: location.state.from}}>cast</NavLink>
-            <NavLink to='reviews'state={{from: location.state.from}}>reviews</NavLink>
+        <div className="moviesdetails">
+            <h1 className="home">Movies details</h1>
+            <button type="button" onClick={hendleGoBack} className='moviesdetails_button'>Go to back</button>
+           {movieData && <DataMoviesDetails data={movieData} />}
+            <NavLink to='cast' state={{from: location.state.from}} className='moviesdetails_details'>Cast</NavLink>
+            <NavLink to='reviews'state={{from: location.state.from}} className='moviesdetails_details'>Reviews</NavLink>
             < Outlet/>
         </div>
     )
 }
 
 export default MoviesDetails;
+

@@ -36,14 +36,14 @@ const Movies = () => {
 
     return (
         <div>
-            <h1>Movies</h1>
-            <form onSubmit={hendleSubmit}>
-                <input type="text" value={query} onChange={hendleChenge} />
-                <button type="submit">search</button>
+            <h1 className="home">Movies</h1>
+            <form onSubmit={hendleSubmit} className="form">
+                <input type="text" value={query} onChange={hendleChenge} className="imput" />
+                <button type="submit" className="imput_button">search</button>
             </form>
             <MoviesList movies={movies}/>
         </div>
     )
 }
 
-export default Movies
+export default Movies;

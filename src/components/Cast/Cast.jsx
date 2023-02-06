@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { fetchCastInfo } from "../servise/appServise";
 import { useParams } from "react-router-dom";
 import { BASE_IMG_URL } from "components/servise/constants";
+import './Cast.css'
 
 const Cast = () => {
     const { id } = useParams();
@@ -10,14 +11,14 @@ const Cast = () => {
         fetchCastInfo(id).then(setCast)
     }, [id]);
     return (
-        <div>
-            <h2>Cast</h2>
+        <ul className="Cast_box">
+            <h2 className="Cast_title">Cast</h2>
             {cast.map(actor => (
-                <li key={actor.id}>
-                    <img src={BASE_IMG_URL(actor.profile_path)} alt={actor.name} width="100px"/>
+                <li key={actor.id} className='Cast_card'>
+                    <img src={BASE_IMG_URL(actor.profile_path)} alt={actor.name} />
                     {actor.name}</li>
             ))}
-        </div>
+        </ul>
     )
 }
 

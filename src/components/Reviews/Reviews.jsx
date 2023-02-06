@@ -12,10 +12,10 @@ const Reviews = () => {
   }, [id]);
   return (
     <div>
-      <h2>Reviews</h2>
+      <h2 className='Cast_title'>Reviews</h2>
       <ul>
         {results.map(author => (
-          <li key={author.id}>
+          <li className='text' key={author.id}>
             <h3>{author.author}</h3>
             <p>{author.content}</p>
           </li>
