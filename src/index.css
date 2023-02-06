@@ -40,3 +40,173 @@ code {
   font-size: 18px;
   text-decoration: none
 }
+
+.Cast_box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.Cast_title {
+  width: 100%;
+  padding-bottom: 20px;
+  text-align: center;
+  color: azure;
+  font-size: 30px;
+  margin: 0px;
+}
+
+.Cast_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 200px;
+  gap: 10px;
+  height: 320px;
+  color: azure;
+}
+
+.text {
+  color: azure;
+}
+
+.DataMoviesDetails {
+  padding: 0 25px;
+  width: 400px;
+  color: azure;
+}
+
+.render_List {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 0px auto;
+  list-style: none;
+  padding: 20px;
+}
+
+.renderCard {
+  width: 30%;
+  display: flex;
+  border-radius: 4px;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(145deg, rgb(13, 1, 62), rgb(39, 17, 186));
+  box-shadow: rgb(46 43 194) 2px 6px 8px, rgb(29 6 235) -2px -2px 6px;
+  transition: transform 250ms ease-in-out 0s, box-shadow 300ms ease-out 0s, color 150ms ease-in 0s;
+  text-align: center;
+}
+
+
+.card {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+
+}
+
+.render_foto {
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-radius: 3px;
+  overflow: hidden;
+  background: rgb(39, 17, 186);
+  box-shadow: rgb(46 43 194) 2px 6px 8px, rgb(29 6 235) -2px -2px 6px;
+  transition: box-shadow 300ms ease-out 0s, color 150ms ease-in 0s;
+  cursor: pointer;
+}
+
+.imput_button {
+  display: inline-block;
+  background-color: rgb(13, 1, 62);
+  height: 48px;
+  border: 0px;
+  opacity: 0.6;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-left: 20px;
+  color: chartreuse;
+  box-shadow: rgb(46 43 194) 2px 6px 8px;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.imput {
+  display: inline-block;
+  background-color: rgb(29, 15, 85);
+  width: 100%;
+  height: 48px;
+  border: 0px;
+  opacity: 0.6;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-left: 20px;
+  color: chartreuse;
+  box-shadow: rgb(46 43 194) 2px 6px 8px;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.moviesdetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.moviesdetails_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(13, 1, 62);
+  height: 48px;
+  width: 400px;
+  border: 0px;
+  opacity: 0.6;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  color: chartreuse;
+  box-shadow: rgb(46 43 194) 2px 6px 8px;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.moviesdetails_details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  border-radius: 15px;
+  background-color: blue;
+  text-decoration: none;
+  color: azure;
+  width: 200px;
+  height: 25px;
+  font-size: 20px;
+
+}
+
+.home {
+  text-align: center;
+  color: azure;
+  font-size: 50px;
+  margin: 0px;
+}
+
+.Navigation {
+  display: flex;
+  gap: 60px;
+  padding: 20px;
+  border: 3px solid #ffa500;
+  background-color: darkblue;
+  border-radius: 40px;
+  margin-top: 10px;
+}
