@@ -6,7 +6,7 @@ const isActive = ({ isActive }) => isActive ? 'active_card' : 'card';
 export const MoviesList = ({ movies }) => {
   const location = useLocation();
   return (
-    <ul className='renderList'>
+    <ul className='render_List'>
       {movies.map(movie => (
         <li className='renderCard' key={movie.id}>          
           <NavLink to={`/movies/${movie.id}`} state={{ from: location, }} className={isActive}>
